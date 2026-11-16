@@ -31,5 +31,7 @@ public class Company {
 	private String estado;
 	@Column(nullable = false, columnDefinition = "char(2)")		//diz ao Hibernate o tipo exato da coluna no banco
 	private String uf;
+	@Column(nullable = false, length = 10)
+	private String numero;
 	
 }
